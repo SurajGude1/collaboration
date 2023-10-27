@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+</head>
+<body>
+    <form id="data-form">
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <button type="submit">Submit</button>
+      </form>
+
+</body>
+<script>
+    // Initialize Firebase with your configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC7x1AvwpfLJWmfsFXtrf4Ulr0X6VzBNiw",
+      authDomain: "test-ac85e.firebaseapp.com",
+      databaseURL: "https://test-ac85e-default-rtdb.firebaseio.com",
+      projectId: "test-ac85e",
+      storageBucket: "test-ac85e.appspot.com",
+      messagingSenderId: "186978834019",
+      appId: "1:186978834019:web:a38e6dd8dc96ccd79bca56"
+    };
+    firebase.initializeApp(firebaseConfig);
+
+    // Reference to your database
+    var database = firebase.database();
+  </script>
+<script>
+    document.getElementById('data-form').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+
+      // Push data to the 'test' database node
+      var newDataRef = database.ref('test').push();
+      newDataRef.set({
+        name: name,
+        email: email
+      });
+
+      // Clear form inputs
+      document.getElementById('name').value = '';
+      document.getElementById('email').value = '';
+
+      alert('Data submitted successfully!');
+    });
+  </script>
+
+
+</html>

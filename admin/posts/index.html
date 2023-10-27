@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf9f264ee5.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="/Images/icon_diamond-1857736.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+    <!-- Custom Styling -->
+
+    <link rel="stylesheet" href="../../styles/style.css" class="sty">
+    <link rel="stylesheet" href="../css/admin.css" class="sty">
+
+    <title>Admin Section - Manage Posts</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1 class="logo-text"><span>Top</span>Blogger..</h1>
+        </div>
+
+        <!-- Toggle fa-bars -->
+        <i class="fa fa-bars menu-toggle"></i>
+
+        <!-- Navigation Bar -->
+        <ul class="nav">
+
+            <li>
+                <a href="#"><i class="fa fa-user"></i>Suraj Gude<i class="fa fa-chevron-down"
+                        style="font-size: .8em;"></i></a>
+                <ul>
+
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+
+    <!--Admin page-wrapper Starts -->
+    <div class="admin-wrapper">
+        <!-- left slide-bar Starts -->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="index.html">Manage Posts</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="../topics/index.html">Manage Topics</a></li>
+            </ul>
+        </div>
+        <!-- left slide-bar Ends -->
+
+        <!-- Admin content Starts -->
+        <div class="admin-content">
+
+            <div class="buttom-group">
+                <a href="createpost.html" class="btn btn-big">Add Post</a>
+                <a href="index.html" class="btn btn-big">Manage</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Manage Posts</h2>
+                <table>
+                    <head>
+                        <th>SN</th>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th colspan="3">Action</th>
+                    </head>
+                    <tbody id="table-body">
+                        <tr>
+                            <td>1</td>
+                            <td id="post-title"></td>
+                            <td id="post-author"></td>
+                            <td><a href="#" class="edit">edit</a></td>
+                            <td><a href="#"class="delete">delete</a></td>
+                            <td><a href="#"class="publish">publish</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Admin content Ends -->
+    </div>
+    <!-- Admin page-wrapper Ends -->
+
+
+
+    <!-- JQuery Tags Starts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
+    <!-- JQuery Tags Ends-->
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cf9f264ee5.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="/Images/icon_diamond-1857736.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Candal&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora&display=swap" rel="stylesheet">
+    <!-- Custom Styling -->
+
+    <link rel="stylesheet" href="../../styles/style.css" class="sty">
+    <link rel="stylesheet" href="../css/admin.css" class="sty">
+
+    <title>Admin Section - Add Topic</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+            <h1 class="logo-text"><span>Top</span>Blogger..</h1>
+        </div>
+
+        <!-- Toggle fa-bars -->
+        <i class="fa fa-bars menu-toggle"></i>
+
+        <!-- Navigation Bar -->
+        <ul class="nav">
+
+            <li>
+                <a href="#"><i class="fa fa-user"></i>Top Blogger<i class="fa fa-chevron-down"
+                        style="font-size: .8em;"></i></a>
+                <ul>
+
+                    <li><a href="#" class="logout">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </header>
+
+    <!--Admin page-wrapper Starts -->
+    <div class="admin-wrapper">
+        <!-- left slide-bar Starts -->
+        <div class="left-sidebar">
+            <ul>
+                <li><a href="../posts/index.html">Manage Posts</a></li>
+                <li><a href="../users/index.html">Manage Users</a></li>
+                <li><a href="index.html">Manage Topics</a></li>
+            </ul>
+        </div>
+        <!-- left slide-bar Ends -->
+        
+        <!-- Admin content Starts -->
+        <div class="admin-content">
+
+            <div class="buttom-group">
+                <a href="createtopic.html" class="btn btn-big">Add Topic</a>
+                <a href="index.html" class="btn btn-big">Manage Topic</a>
+            </div>
+
+            <div class="content">
+                <h2 class="page-title">Add Topic</h2>
+
+               <form action="createpost.html" method="post">
+                <div>
+                    <label>Name</label>
+                    <input type="text" name="name" class="text-input">
+                </div>
+                <div>
+                    <label>Description</label>
+                    <textarea name="description" id="body"></textarea>
+                </div>
+            
+                <div>
+                    <button type="submit" class="btn btn-big">Add Topic</button>
+                </div>
+               </form>
+            </div> 
+        </div>
+        <!-- Admin content Ends -->
+    </div>
+    <!-- Admin page-wrapper Ends -->
+
+
+
+    <!-- JQuery Tags Starts-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- CKeditor Starts     -->
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
+     <!-- CKeditor Ends     -->
+    <script src="../../Scripts/script.js"></script>
+    <!-- JQuery Tags Ends-->
+
+</body>
+
+</html>
